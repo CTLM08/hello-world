@@ -17,12 +17,12 @@ const Main = () => {
       <Typed strings={["in 1080 languages"]} typeSpeed={30} />
       </div>
       <div className="flex flex-col">
-        <button className="bg-neutral-900 h-12 w-56 mt-8 text-[#8b9dc3] animate__animated animate__lightSpeedInLeft ">
-            <NavLink to='/browse' key='browse'>BROWSE</NavLink>
-        </button>
-        <button className="h-12 w-56 mt-3 bg-[#8b9dc3] border-[3px] border-black animate__animated  animate__lightSpeedInRight">
-           <NavLink  to='/list' key='lsit'>LANGUAGES</NavLink>
-        </button>
+      <NavLink to='/browse' key='browse'><button className="bg-neutral-900 h-12 w-56 mt-8 text-[#8b9dc3] animate__animated animate__lightSpeedInLeft ">
+            BROWSE
+        </button></NavLink>
+        <NavLink  to='/list' key='list'><button className="h-12 w-56 mt-3 bg-[#8b9dc3] border-[3px] border-black animate__animated  animate__lightSpeedInRight">
+           LANGUAGES
+        </button></NavLink>
       </div>
     </div>
   );
